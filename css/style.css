@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+/* Nav */
+header
+{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav .logo 
+{
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: none;
+    color: #212121;
+}
+
+.nav ul
+{
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li
+{
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.nav .sumarme
+{
+    border: 3px solid #212121;
+    border-radius: 30px;
+    padding: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #212121;
+}
+
+.nav .sumarme:hover
+{
+    border: 3px solid #1cafff;
+    color: #fff;
+    background: #1cafff;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav .btnLogin
+{
+   font-size: 1.4em;
+}
+
+/* Login */
+
+.login-box 
+{
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    z-index: 1000;
+    transition-delay: .5s;
+}
+
+
+.login-box h2 
+{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #111;
+    text-align: center;
+}
+
+.login-box .iconClose
+{
+    position: absolute;
+    font-size: 1.5em;
+    top: 10px;
+    right: 10px;
+}
+
+.login-box .user-box 
+{
+    position: relative;
+}
+  
+.login-box .user-box input 
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #111;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label 
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #212121;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label 
+{
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+  
+.login-box form a 
+{
+    text-align: center;
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #1cafff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 20px;
+    letter-spacing: 2px
+}
+  
+
+/* Filter */
+
+.filter
+{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    height: 60px;
+	width: 800px;
+    font-weight: 500;
+    border-radius: 99px; 
+    background: #fdfdfd;
+    z-index: 1000;
+    cursor: pointer;
+	transition: color 0.15s ease-in;
+    transform: translate(-50%, 0);
+    box-shadow: 0 15px 25px rgba(0,0,0,.4);
+}
+
+.filter form 
+{
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.user-box1, .user-box2
+{
+    margin-right: 20px;
+}
+
+.filter button 
+{
+    padding: 2px 8px;
+    border: 1px solid #111;
+    border-radius: 20px;
+    color: #1cafff;
+    font-weight: 600;
+    background: #fff;
+}
+
+.filter button:hover
+{
+    background: #1cafff;
+    color: #fff;
+    transition: .5s;
+}
+
+/* Banner */
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.banner h1
+{
+    position: absolute;
+    left: 50%;
+    z-index: 100;
+}
+
+.container
+{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background: radial-gradient(#9cdcff, #1cafff);
+}
+
+.container #scene
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container #scene #text
+{
+    display: flex;
+    position: relative;
+    color: #fff;
+    font-size: 14vw;
+    /* z-index: 100; */
+}
+
+.container #scene #text span
+{
+    position: relative !important;
+    user-select: none;
+    display: inline-block;
+    text-shadow: 1px 1px 0 #e1e1e1,
+    2px 2px 0 #e1e1e1,
+    3px 3px 0 #e1e1e1,
+    4px 4px 0 #e1e1e1,
+    5px 5px 0 #e1e1e1,
+    6px 6px 0 #e1e1e1,
+    7px 7px 0 #e1e1e1,
+    8px 8px 0 #e1e1e1,
+    25px 30px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+.containerImg
+{
+    position: absolute;
+    
+}
+.containerImg p
+{
+    text-align: center;
+    font-size: 1.4em;
+    user-select: none;
+}
+.layer
+{
+    display: inline-block;
+}
+
+.layer img
+{
+    width: 100px;
+    padding: 20px;
+    user-select: none;
+}
+
+
+/*  Container Cards / Cards */
+.container-cards
+{
+    height: 160vh;
+    width: 80%;
+    /* background: #adadad; */
+    margin: auto;
+    margin-top: 40px;
+    padding: 60px 20px 0;
+}
+
+.card
+{
+    position: relative;
+    display: block;
+    text-align: center;
+    max-width: 200px;
+    background-color: #ffffff;
+	border-radius: 10px;
+    padding: 60px 0 0;
+    box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-photo
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -20%;
+    left: 25%;
+    border-radius: 50%;
+    margin: auto auto;
+    /* border: solid #111; */
+    background: #ececca;
+}
+
+.card .card-photo p
+{
+    text-align: center;
+    font-size: 4em;
+    color: rgb(236, 145, 145);
+}
+
+.card-info h3, .card-info p
+{
+    font-weight: 600;
+    color: #6a6a6a;
+}
+
+.card-info p
+{
+    font-weight: 400;
+}
+
+.card-social
+{
+    margin-top: 10px;
+}
+.card-social a 
+{
+    font-size: 2em;
+    padding: 10px;
+    color: #3a3a3a;
+}
+
+.card-social .whatsapp:hover
+{
+    color: green;
+}
+
+.card-social .phone:hover
+{
+    color: #000000;
+}
+
+.card-social .mail:hover
+{
+    color: #1cafff;
+}
+
+/* Footer */
+.attribution 
+{ 
+    font-size: 14px; 
+    text-align: center;
+    height: 30vh;
+    background: #212121;
+    margin-top: 40px;
+    padding: 40px;
+}
+.attribution a
+{ 
+    color: hsl(228, 24%, 44%);
+}
+
+.emoji
+{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.personal-profile
+{
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+}
+
+/* Index Registro */
+
+.register-section-one
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.register-first-card
+{
+    width: 600px;
+    height: 400px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.register-first-card .exit
+{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.register-first-card p
+{
+    padding: 40px;
+}
+
+.register-first-card button
+{
+    padding: 5px;
+}
+
+.register-first-card button a
+{
+    text-decoration: none;
+}
+
+.register-section-two
+{
+    width: 100%;
+    height: 100vh;
+    background: #3a3a3a;
+}
+
+.register-section-three
+{
+    width: 100%;
+    height: 100vh;
+    background: #6a6a6a;
+}
