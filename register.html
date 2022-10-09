@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Registro - Labor</title>
 </head>
 <body>
     <section class="register-section-one">
 
-        <div class="register-first-card">
-            <div class="exit"><a href="../index.html"><p>Salir</p></a></div>
+        <div class="register-first-card letsRegister">
+            <div class="exit"><a href="./index.html"><p>Salir</p></a></div>
             <div class="overlay">
-                 
                 <div class="overlay__inner">
                     <!-- Title -->
-                    <h1 class="overlay__title">Hola, bienvenido a Labor!</h1>
+                    <h1 class="register__title">Hola, bienvenido a Labor!</h1>
                     <!-- Description -->
-                    <p class="overlay__description">A continuación, vamos a pedirte rellenar un pequeño formulario con tus datos de contacto.</p>
+                    <p class="registers__description">A continuación, vamos a pedirte rellenar un pequeño formulario con tus datos de contacto.</p>
                     
                     <!-- Button -->
-                    <button><a href="#2"><span>Vamos..! 💪</span></a></button>
+                    <button class="letsRegister"><a href="#"><span>Vamos..! 💪</span></a></button>
                 </div>
             </div>
         </div>      
@@ -29,16 +28,56 @@
     </section>
     
     <section id="2" class="register-section-two">
+        
     
-    
+        <div class="register-first-card">
+            <h1 class="register__title">Sobre ti.</h1>
+            <form action="">
+                <label for="fname">Nombre:</label>
+                <input type="text" id="fname" name="nombre">
+                <label for="lname">Apellido:</label>
+                <input type="text" id="lname" name="apellido"><br>
+                <br>
+                <label for="">Tu/s Profesión/es:</label>
+                <input type="text" id="" name="">
+                <input type="text" id="" name="">
+                <input type="text" id="" name="">
+                <input type="text" id="" name=""><br>
+                <br>
+                <label for="lname">Teléfono:</label>
+                <input type="text" id="" name="">
+                <label for="lname">Ciudad:</label>
+                <input type="text" id="" name="">
+                <label for="lname">Provincia:</label>
+                <input type="text" id="" name=""><br>
+                <label for="number">CP-Postal:</label>
+                <input type="text" id="" name="">
+                <label for="lname">País:</label>
+                <input type="text" id="" name="">
+                <br>
+                <br>
+                <label for="">Email:</label>
+                <input type="text" id="" name=""><br>
+                <label for="">Ingrese email nuevamente:</label>
+                <input type="text" id="" name=""><br>
+                <label for="">Contraseña</label>
+                <input type="text" id="" name="">
+                <label for="">Ingrese contraseña nuevamente:</label>
+                <input type="text" id="" name="">
+                <br>
+                <br>
+                <input type="checkbox" name="" id=""><label for="lname"> Acepto terminos y condiciones.</label>
+                <br>
+                <button type="submit">Registrarme</button>
+            </form>
+        </div>
+        
+            
     </section>
 
-    <section class="register-section-three">
-
-    </section>
 
     <!-- Main JS -->
-    <script src="./js/main.js"></script>
+    <script src="./script/main.js"></script>
     <!-- ICONS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

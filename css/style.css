@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;    
-    /* font-family: 'Lato', sans-serif; */
     font-family: 'Poppins', sans-serif;
-    /* font-family: 'Montserrat', sans-serif; */
 }
 
 /* Nav */
@@ -286,26 +282,30 @@ header
 
 
 /*  Container Cards / Cards */
+
 .container-cards
 {
-    height: 160vh;
+    height: 100vh;
     width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     /* background: #adadad; */
     margin: auto;
-    margin-top: 40px;
     padding: 60px 20px 0;
 }
 
 .card
 {
     position: relative;
-    display: block;
     text-align: center;
-    max-width: 200px;
+    width: 160px;
+    height: 220px;
     background-color: #ffffff;
 	border-radius: 10px;
     padding: 60px 0 0;
     box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px 10px;
 }
 
 .card .card-photo
@@ -313,8 +313,8 @@ header
     width: 100px;
     height: 100px;
     position: absolute;
-    top: -20%;
-    left: 25%;
+    top: -25%;
+    left: 18%;
     border-radius: 50%;
     margin: auto auto;
     /* border: solid #111; */
@@ -345,8 +345,8 @@ header
 }
 .card-social a 
 {
-    font-size: 2em;
-    padding: 10px;
+    font-size: 1.6em;
+    padding: 8px;
     color: #3a3a3a;
 }
 
@@ -395,7 +395,9 @@ header
 
 /* Index Registro */
 
-.register-section-one
+.register-section-one,
+.register-section-two,
+.register-section-three
 {
     width: 100%;
     height: 100vh;
@@ -405,7 +407,8 @@ header
 }
 
 
-.register-first-card
+.register-first-card,
+.register-second-card
 {
     width: 600px;
     height: 400px;
@@ -418,7 +421,7 @@ header
 
 .register-first-card .exit
 {
-    position: absolute;
+    position: fixed;
     right: 20px;
     top: 20px;
 }
@@ -438,16 +441,3 @@ header
     text-decoration: none;
 }
 
-.register-section-two
-{
-    width: 100%;
-    height: 100vh;
-    background: #3a3a3a;
-}
-
-.register-section-three
-{
-    width: 100%;
-    height: 100vh;
-    background: #6a6a6a;
-}
